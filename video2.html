@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproductor HTML5</title>
+  <link rel="stylesheet" type="text/css" href="video.css">
+  <script src="video.js"></script>
+</head>
+<body>
+  <h1>Reproductor</h1>
+  <div id="loading-message">El video puede demorar en cargarse</div>
+  <div id="ad" style="display: none;">
+    <p>El video puede demorar en reproducirse</p>
+    <button id="closeAd">Cerrar</button>
+  </div>
+  <video id="mivideo" width="400" height="300" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="mivideo.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <div>
+    <label for="volumen"></label>
+    <button id="btn-play">Reproducir</button>
+    <button id="btn-pause">Pausar</button>
+    <button id="subir-volumen">Subir volumen</button>
+    <button id="bajar-volumen">Bajar volumen</button>
+    <input type="file" id="seleccionar-video" accept="video/mp4">
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="1">
+  </div>
+
+  <script src="video.js"></script>
+</body>
+</html>
